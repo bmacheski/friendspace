@@ -1,0 +1,17 @@
+{
+  "name": "friendspace",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bmacheski/friendspace",
+  "authors": [
+    "bmacheski <bwm0007@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
