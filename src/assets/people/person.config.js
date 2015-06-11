@@ -4,7 +4,7 @@ angular
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/create', {
-				templateUrl : 'static/create.html',
+				templateUrl : 'assets/people/create.html',
 				controller: 'CreateCtrl',
 				controllerAs: 'main'
 			})

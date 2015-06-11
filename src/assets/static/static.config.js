@@ -14,5 +14,6 @@ angular
 			})
 			.otherwise({
 				templateUrl: 'assets/static/404.html'
+
 			});
 	});

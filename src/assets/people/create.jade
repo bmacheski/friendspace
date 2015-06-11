@@ -4,10 +4,17 @@ form(name="createProfileForm")
 		input.form-control(type="text" ng-model="main.person.name")
 	.form-group
 		label Email
-		input(type="text" ng-model="main.person.email")
+		input.form-control(type="text" ng-model="main.person.email")
+	.form-group
+		label Password
+		input.form-control(type="password" ng-model="main.person.password")
 	.form-group
 		label City
-		input(type="text" ng-model="main.person.city")
+		input.form-control(type="text" ng-model="main.person.city")
 	.form-group
 		label Hobbies
-		input(type="text" ng-model="main.person.hobbies")
+		input.form-control(type="text" ng-model="main.person.hobbies")
+	.form-group
+		label Photo
+		input.form-control(type="url" ng-model="main.person.photo")
+	.btn.btn-primary(ng-click="createProfileForm.$valid && main.createPerson()") Submit
