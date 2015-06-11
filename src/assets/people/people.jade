@@ -1,5 +1,6 @@
 h2 People
 .gallery
 	.person(ng-repeat="(id, person) in main.people | objToArr")
-		img(ng-src="{{person.photo}}")
 		h3 {{person.name}}
+		img(ng-src="{{person.photo}}")
+

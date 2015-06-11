@@ -7,26 +7,37 @@ html(lang="en-US", ng-app="friendSpace")
     title Friendspace
     link(rel="stylesheet" href="lib/build.css")
     link(rel="stylesheet" href="assets/main.css")
+    link(href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
   body
-    .container
-      .nav
-        ul(class="list-inline")
-          li: a(href="/#/") Home
-          li: a(href="/#/contact") Contact
-          li: a(href="/#/about") About
-          li: a(href="/#/people") Friendspace
-          li: a(href="/#/create") Register
-      .app(ng-view)
+    .navbar(class="navbar navbar-default navbar-static-top")
+      .container
+        .header-nav-left
+          h1.header-logo <i class="fa fa-user-secret"></i> Friendspace
+          .header-links
+              ul(class="list-inline")
+                li: a(href="/#/") Home
+                li: a(href="/#/contact") Contact
+                li: a(href="/#/about") About
+                li: a(href="/#/people") Friendspace
+                li: a(href="/#/create") Register
+                li: a(href="/#/login") Login
+        .header-nav-right
+          btn.btn-primary.logout Logout
+     .container
+        .app(ng-view)
 
     script(src="lib/build.js")
     script(src="assets/main.module.js")
     script(src="assets/main.constants.js")
     script(src="assets/main.filters.js")
+
     script(src="assets/static/static.config.js")
     script(src="assets/people/create.controller.js")
     script(src="assets/people/people.config.js")
     script(src="assets/people/people.controller.js")
+
+    script(src="assets/auth/login.controller.js")
     script(src="assets/people/person.config.js")
     script(src="assets/people/person.factory.js")
     script(src="assets/auth/auth.config.js")
-    script(src="assets/auth/login.controller.js")

@@ -1,3 +1,67 @@
 img {
 	height: 100px;
 }
+
+/**Header Styles**/
+.navbar {
+  width: 100%;
+  background-color: #efefef;
+  border-bottom: 1px solid #dedede;
+  float: left;
+  display: inline-block;
+}
+
+/**Header Left Side**/
+.header-nav-left {
+  float: left;
+}
+
+.header-logo {
+  font-family: 'Bree Serif';
+  float: left;
+  display: inline-block;
+  color: #3d97d2;
+  font-size: 26px;
+  margin: 10px 0 0 0;
+}
+
+.header-links {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #303030;
+  font-weight: 500;
+  float: right;
+  margin-left: 36px;
+  margin-top: 15px;
+}
+
+.header-links a {
+  color: #303030;
+}
+
+/**Header Right Side**/
+.header-nav-right {
+  float: right;
+}
+
+.btn-primary.logout {
+  float: right;
+  background: transparent;
+  border: 1px solid #3d97d2;
+  display: inline-block;
+  color: #3d97d2;
+  padding: 2px 6px 2px 6px;
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+.btn-primary.logout:hover {
+  float: right;
+  background: #3d97d2;
+  border: 1px solid #3d97d2;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 6px 2px 6px;
+  border-radius: 2px;
+  margin-top: 12px;
+}
