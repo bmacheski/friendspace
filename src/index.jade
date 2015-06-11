@@ -1,5 +1,5 @@
 doctype html
-html(lang="en-US")
+html(lang="en-US", ng-app="friendSpace")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -8,5 +8,21 @@ html(lang="en-US")
     link(rel="stylesheet" href="lib/build.css")
     link(rel="stylesheet" href="assets/main.css")
   body
+    .container
+      .nav
+        ul(class="list-inline")
+          li: a(href="/#/") Home
+          li: a(href="/#/contact") Contact
+          li: a(href="/#/about") About
+          li: a(href="/#/people") Friendspace
+          li: a(href="/#/create") Profile
+      .app(ng-view)
 
     script(src="lib/build.js")
+    script(src="assets/main.module.js")
+    script(src="assets/main.constants.js")
+    script(src="assets/static/static.config.js")
+    script(src="assets/people/create.controller.js")
+    script(src="assets/people/person.config.js")
+    script(src="assets/auth/auth.config.js")
+    script(src="assets/auth/login.controller.js")
